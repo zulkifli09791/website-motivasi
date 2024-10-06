@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata Motivasi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Web Motivasi</h1>
+        <p>Pilih kategori yang sesuai dengan situasi Anda dan dapatkan kata-kata motivasi khusus!</p>
+    </header>
+
+    <main id="main-menu">
+        <section id="categories">
+            <button onclick="getMotivation('stress')">Orang yang sedang stress</button>
+            <button onclick="getMotivation('galau')">Orang galau</button>
+            <button onclick="getMotivation('putus_cinta')">Orang putus cinta</button>
+            <button onclick="getMotivation('kuliah')">Pejuang kuliah</button>
+            <button onclick="getMotivation('kerja')">Pejuang kerja</button>
+            <button onclick="getMotivation('keluarga')">Pejuang keluarga</button>
+            <button onclick="getMotivation('lainnya')">Lainnya</button>
+        </section>       
+    </main>
+
+    <div id="loading" style="display: none;">
+        <p>Loading...</p>
+    </div>
+
+    <div id="motivation-result" style="display: none;">
+        <p id="motivational-quote"></p>
+        <button onclick="backToMenu()">Terima Kasih</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kata-Kata Motivasi - powered by Zulkifli</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
